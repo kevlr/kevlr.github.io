@@ -1,0 +1,40 @@
+body {
+	background: #e8e8e8;
+}
+
+.column-style {
+	border: 2px solid lightblue;
+	background: aliceblue;
+	min-height: 100px;
+}
+
+.column {
+	@include gutter(margin, top bottom, .5);
+}
+
+@include media(s) {
+	body {
+		background: #eee;
+	}
+}
+
+@include media(m) {
+	body {
+		background: #f8f8f8;
+	}
+}
+
+@include media(l) {
+	body {
+		background: #fff;
+	}
+}
+
+/*
+
+$pxtest: 12px, 12px;
+
+body:before {
+	content: '"' + unit($pxtest) + '"';
+}
+*/
