@@ -1052,8 +1052,6 @@ h6, .h6 {
   font-weight: 400;
   margin-top: .7em;
   margin-bottom: .5em; }
-.article a {
-  text-decoration: underline; }
 
 /* ----- Button ----- */
 button, .button {
@@ -1062,15 +1060,15 @@ button, .button {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 1.2;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  background: #cccccc;
-  color: #333333;
+  font-size: 20px;
+  font-size: 1.25rem;
+  background: #4292aa;
+  color: white;
   text-align: center;
   text-decoration: none;
-  padding: 7px 40px 8px; }
+  padding: 12px 32px 13px; }
   button .big-button, .button .big-button {
-    padding: 12px 45px 13px; }
+    padding: 17px 37px 18px; }
 
 .nav {
   list-style: none;
