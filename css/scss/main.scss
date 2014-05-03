@@ -1,0 +1,7 @@
+@import
+	"../kevlr/scss/variables",
+	"../kevlr/scss/functions";
+
+pre {
+	@include rem(font-size, 14px);
+}
