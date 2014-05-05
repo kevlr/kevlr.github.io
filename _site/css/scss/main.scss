@@ -1,6 +1,7 @@
 @import
+	"../kevlr/scss/functions",
 	"../kevlr/scss/variables",
-	"../kevlr/scss/functions";
+	"../kevlr/scss/mixins";
 
 .column {
 	@include gutter(margin, bottom top, .5);

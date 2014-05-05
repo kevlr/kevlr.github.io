@@ -15,21 +15,20 @@ title: Grid System
 	
 	<p>The first step to built your grid system is to change the variables according to your design.</p>
 	
-<pre>
+<pre class="prettyprint">
 $columns-number: 12;		// Number of columns in your grid system.
 $column-gutter: 10px;		// Width of the gutter between the columns.
 $container-max-width: none;	// The max-width of your container, "none" if fluid.
 $container-min-width: 320px;	// The min-width of your container
-$container-align: center;	// Position of your container, "center", "left" or "right",
+$container-align: center;	// Position of your container, "center", "left" or "right"
 </pre>
 	
-	<h2>Syntax</h2>
+	<h3>Syntax</h3>
 	<p>Add the <code>.column</code> class to your columns and wrap them in a <code>.row</code> element. Specify the width with the <code>.width#</code> class</p>
 	
 	<h5>Exemple</h5>
 	<div class="exemple">
 		<div class="row">
-			<div class="column width12"><div class="column-content">.width12</div></div>
 			<div class="column width6"><div class="column-content">.width6</div></div>
 			<div class="column width6"><div class="column-content">.width6</div></div>
 			<div class="column width4"><div class="column-content">.width4</div></div>
@@ -44,16 +43,15 @@ $container-align: center;	// Position of your container, "center", "left" or "ri
 	
 <pre class="prettyprint">
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;column width12&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 	
@@ -64,7 +62,6 @@ $container-align: center;	// Position of your container, "center", "left" or "ri
 	<h5>Exemple</h5>
 	<div class="exemple">
 		<div class="row double-gutter">
-			<div class="column width12"><div class="column-content">.width12</div></div>
 			<div class="column width6"><div class="column-content">.width6</div></div>
 			<div class="column width6"><div class="column-content">.width6</div></div>
 			<div class="column width4"><div class="column-content">.width4</div></div>
@@ -79,23 +76,21 @@ $container-align: center;	// Position of your container, "center", "left" or "ri
 	
 <pre class="prettyprint">
 &lt;div class=&quot;row double-gutter&quot;&gt;
-	&lt;div class=&quot;column width12&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 	
 	<h5>Exemple</h5>
 	<div class="exemple">
 		<div class="row no-gutter">
-			<div class="column width12"><div class="column-content">.width12</div></div>
 			<div class="column width6"><div class="column-content">.width6</div></div>
 			<div class="column width6"><div class="column-content">.width6</div></div>
 			<div class="column width4"><div class="column-content">.width4</div></div>
@@ -110,19 +105,68 @@ $container-align: center;	// Position of your container, "center", "left" or "ri
 	
 <pre class="prettyprint">
 &lt;div class=&quot;row no-gutter&quot;&gt;
-	&lt;div class=&quot;column width12&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 	
-	<h3>Responsive</h3>
+	<h2>Responsiveness</h2>
+	
+	<h3>Variables</h3>
+	
+	<p>Choose the number of screen sizes you want adding/removing one value to each parameter.</p>
+	
+<pre class="prettyprint">
+// layouts
+$larger-layouts-name:			's',		'm',		'l';	// name of you layouts (ascending order)
+$larger-layouts-media-queries:		500px,		800px,		1024px;	// your break points for each layout
+$larger-layouts-columns-number:		12,		12,		12;	// your columns number for each layout
+$larger-layouts-column-gutter:		20px,		20px,		40px;	// gutter size for each layout
+$larger-layouts-container-max-width:	480px,		768px,		960px; 	// container max-width for each layout ("none" if fluid)
+
+// general
+$media-queries-rules: 'only screen';
+$elements-to-order: -3, 3; // order propriety for flex display
+</pre>
+	
+	<h3>Syntax</h3>
+	
+	<h4>Sizes</h4>
+	
+	<p>To change the columns width in another screen size add a <code>.width#</code> class followed by <code>--</code> and the name of your layout, for exemple <code>.width6--m</code></p>
+	
+	<h5>Exemple</h5>
+	<div class="exemple">
+		<div class="row">
+			<div class="column width12 width6--m"><div class="column-content">.width12.width6--m</div></div>
+			<div class="column width12 width6--m"><div class="column-content">.width12.width6--m</div></div>
+			<div class="column width12 width6--m"><div class="column-content">.width12.width6--m</div></div>
+			<div class="column width12 width6--m"><div class="column-content">.width12.width6--m</div></div>
+		</div>
+	</div>
+	
+<pre class="prettyprint">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;column width12 width6--m&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width12 width6--m&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width12 width6--m&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width12 width6--m&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+	
+	<h4>Alignment</h4>
+	
+	<p>Change the column alignment adding <code>.bottom-align</code>, <code>.center-align</code>, <code>.baseline-align</code> or <code>.equal-height</code> class to your <code>.row</code></p>
+	
+	<h4>Order</h4>
+	
+	<h2>Usefull Mixins</h2>
 
 </div>
