@@ -223,9 +223,13 @@ body {
     .row {
       display: block; } }
 
-.external-gutter {
+.double-gutter {
   margin-left: 5px;
   margin-right: 5px; }
+
+.no-gutter {
+  margin-left: -5px;
+  margin-right: -5px; }
 
 .column {
   padding-left: 5px;
@@ -391,9 +395,13 @@ body {
   .container {
     max-width: 480px; }
 
-  .external-gutter {
+  .double-gutter {
     margin-left: 10px;
     margin-right: 10px; }
+
+  .no-gutter {
+    margin-left: -10px;
+    margin-right: -10px; }
 
   .column {
     padding-left: 10px;
@@ -555,9 +563,13 @@ body {
   .container {
     max-width: 768px; }
 
-  .external-gutter {
+  .double-gutter {
     margin-left: 10px;
     margin-right: 10px; }
+
+  .no-gutter {
+    margin-left: -10px;
+    margin-right: -10px; }
 
   .column {
     padding-left: 10px;
@@ -719,9 +731,13 @@ body {
   .container {
     max-width: 960px; }
 
-  .external-gutter {
+  .double-gutter {
     margin-left: 20px;
     margin-right: 20px; }
+
+  .no-gutter {
+    margin-left: -20px;
+    margin-right: -20px; }
 
   .column {
     padding-left: 20px;
@@ -1084,7 +1100,7 @@ button, .button {
   line-height: 1.2;
   font-size: 20px;
   font-size: 1.25rem;
-  background: #4292aa;
+  background: #83bdcf;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -1115,27 +1131,6 @@ button, .button {
     .nav.nav-equal-width li {
       display: table-cell;
       width: 100%; }
-
-.column-style {
-  border: 2px solid lightblue;
-  background: aliceblue;
-  min-height: 100px; }
-
-.column {
-  margin-top: 5px;
-  margin-bottom: 5px; }
-  @media only screen and (min-width: 500px) {
-    .column {
-      margin-top: 10px;
-      margin-bottom: 10px; } }
-  @media only screen and (min-width: 800px) {
-    .column {
-      margin-top: 10px;
-      margin-bottom: 10px; } }
-  @media only screen and (min-width: 1024px) {
-    .column {
-      margin-top: 20px;
-      margin-bottom: 20px; } }
 
 /*
 
