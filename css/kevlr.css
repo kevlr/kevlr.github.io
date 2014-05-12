@@ -1092,14 +1092,6 @@ pre {
   margin-bottom: .5em; }
 
 /* ----- Button ----- */
-.button-big {
-  padding: 20px;
-  font-size: 20px; }
-
-.button-small {
-  padding: 10px;
-  font-size: 14px; }
-
 .button {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -1115,6 +1107,22 @@ pre {
   padding: 12px 32px 13px; }
   .button .big-button {
     padding: 17px 37px 18px; }
+
+.button-big {
+  padding: 20px;
+  font-size: 20px; }
+
+.button-small {
+  padding: 10px;
+  font-size: 14px; }
+
+.button-alert {
+  background: red;
+  font-size: 20px; }
+
+.button-success {
+  background: blue;
+  font-size: 14px; }
 
 .nav {
   list-style: none;
