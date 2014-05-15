@@ -366,6 +366,17 @@ body {
   -ms-flex-align: stretch;
   align-items: stretch; }
 
+.equal-height-child {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @supports not (flex-wrap: wrap) {
+    .equal-height-child {
+      display: block; } }
+
 .inline {
   display: inline; }
 
@@ -1089,7 +1100,8 @@ pre {
 
 .nav {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   .nav.nav-primary li a {
     font-size: rem(font-size, 20px);
     line-height: 1.2;
