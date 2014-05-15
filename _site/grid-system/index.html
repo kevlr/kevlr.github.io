@@ -7,8 +7,9 @@
 		<meta name="viewport" content="width=device-width">
 		
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="/css/kevlr.css">
-		<link rel="stylesheet" href="/css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Muli:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/assets/css/kevlr.css">
+		<link rel="stylesheet" href="/assets/css/main.css">
 		
 	</head>
 	<body onload="prettyPrint()">
@@ -22,9 +23,11 @@
 			</header>
 			<div class="row double-gutter baseline-align">
 				<aside class="column width3_m">
-					<ul class="nav">
+					<ul class="nav nav-primary">
 						<li><a href="/grid-system/">Grid System</a></li>
 						<li><a href="/typography/">Typography</a></li>
+						<li><a href="/navigation/">Navigation</a></li>
+						<li><a href="/button/">Button</a></li>
 						<li><a href="/forms/">Forms</a></li>
 					</ul>
 				</aside>
@@ -168,20 +171,20 @@ $elements-to-order: -3, 3; // order propriety for flex display
 	
 	<h4>Sizes</h4>
 	
-	<p>To change the columns width in another screen size add a <code>.width#</code> class followed by <code>--</code> and the name of your layout, for exemple <code>.width6--m</code></p>
+	<p>To change the columns width in another screen size add a <code>.width#</code> class followed by <code>_</code> and the name of your layout, for exemple <code>.width6_m</code></p>
 	
 	<h5>Exemple</h5>
 	<div class="exemple">
 		<div class="row">
-			<div class="column width12 width6--m"><div class="column-content">.width12.width6--m</div></div>
-			<div class="column width12 width6--m"><div class="column-content">.width12.width6--m</div></div>
+			<div class="column width12 width6_m"><div class="column-content">.width12.width6_m</div></div>
+			<div class="column width12 width6_m"><div class="column-content">.width12.width6_m</div></div>
 		</div>
 	</div>
 	
 <pre class="prettyprint">
 &lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;column width12 width6--m&quot;&gt;...&lt;/div&gt;
-  &lt;div class=&quot;column width12 width6--m&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width12 width6_m&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width12 width6_m&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 	
@@ -207,20 +210,22 @@ $elements-to-order: -3, 3; // order propriety for flex display
 	
 <pre class="prettyprint">
 &lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;column width12 width6--m&quot;&gt;...&lt;/div&gt;
-  &lt;div class=&quot;column width12 width6--m&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width12 width6_m&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width12 width6_m&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 	
 	<h4>Order</h4>
 	
-	<h2>Usefull Mixins</h2>
+	<h2>Useful Mixins</h2>
 
 </div>
 				</div>
 			</div>
 		</div>
 		
-		<script src="/js/prettify.js"></script>
+		<script src="/assets/js/vendor/prettify.js"></script>
+		<script src="/assets/js/plugins.js"></script>
+		<script src="/assets/js/main.js"></script>
 	</body>
 </html>
