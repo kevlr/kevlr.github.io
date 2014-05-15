@@ -365,17 +365,16 @@ body {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
-
-.equal-height-child {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  @supports not (flex-wrap: wrap) {
-    .equal-height-child {
-      display: block; } }
+  .equal-height .column {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    @supports not (flex-wrap: wrap) {
+      .equal-height .column {
+        display: block; } }
 
 .inline {
   display: inline; }
