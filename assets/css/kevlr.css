@@ -873,8 +873,8 @@ body {
       font-size: 1.25rem; } }
   @media only screen and (min-width: 1024px) {
     body {
-      font-size: 20px;
-      font-size: 1.25rem; } }
+      font-size: 22px;
+      font-size: 1.375rem; } }
 
 b,
 strong {
@@ -891,19 +891,20 @@ h1, .h1 {
   line-height: 1.1;
   font-size: 48px;
   font-size: 3rem;
-  line-height: 1; }
+  line-height: 1.1; }
   @media only screen and (min-width: 500px) {
     h1, .h1 {
-      font-size: 53.33333px;
-      font-size: 3.33333rem; } }
+      font-size: 52px;
+      font-size: 3.25rem; } }
   @media only screen and (min-width: 800px) {
     h1, .h1 {
-      font-size: 53.33333px;
-      font-size: 3.33333rem; } }
+      font-size: 52px;
+      font-size: 3.25rem;
+      line-height: 1; } }
   @media only screen and (min-width: 1024px) {
     h1, .h1 {
-      font-size: 53.33333px;
-      font-size: 3.33333rem; } }
+      font-size: 58px;
+      font-size: 3.625rem; } }
 
 h2, .h2 {
   font-family: Muli, sans-serif;
@@ -924,8 +925,8 @@ h2, .h2 {
       font-size: 2.91667rem; } }
   @media only screen and (min-width: 1024px) {
     h2, .h2 {
-      font-size: 46.66667px;
-      font-size: 2.91667rem; } }
+      font-size: 51.33333px;
+      font-size: 3.20833rem; } }
 
 h3, .h3 {
   font-family: Muli, sans-serif;
@@ -946,8 +947,8 @@ h3, .h3 {
       font-size: 2.5rem; } }
   @media only screen and (min-width: 1024px) {
     h3, .h3 {
-      font-size: 40px;
-      font-size: 2.5rem; } }
+      font-size: 44px;
+      font-size: 2.75rem; } }
 
 h4, .h4 {
   font-family: Muli, sans-serif;
@@ -968,8 +969,8 @@ h4, .h4 {
       font-size: 2.08333rem; } }
   @media only screen and (min-width: 1024px) {
     h4, .h4 {
-      font-size: 33.33333px;
-      font-size: 2.08333rem; } }
+      font-size: 36.66667px;
+      font-size: 2.29167rem; } }
 
 h5, .h5 {
   font-family: Muli, sans-serif;
@@ -990,8 +991,8 @@ h5, .h5 {
       font-size: 1.66667rem; } }
   @media only screen and (min-width: 1024px) {
     h5, .h5 {
-      font-size: 26.66667px;
-      font-size: 1.66667rem; } }
+      font-size: 29.33333px;
+      font-size: 1.83333rem; } }
 
 h6, .h6 {
   font-family: Muli, sans-serif;
@@ -1012,8 +1013,8 @@ h6, .h6 {
       font-size: 1.25rem; } }
   @media only screen and (min-width: 1024px) {
     h6, .h6 {
-      font-size: 20px;
-      font-size: 1.25rem; } }
+      font-size: 22px;
+      font-size: 1.375rem; } }
 
 pre {
   font-family: "Andale Mono", AndaleMono, Consolas, "Courier New", Courier, monospace;
@@ -1064,7 +1065,6 @@ pre {
   margin-top: .7em;
   margin-bottom: .5em; }
 
-/* ----- Button ----- */
 .button {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -1078,24 +1078,29 @@ pre {
   text-align: center;
   text-decoration: none;
   padding: 12px 32px 13px; }
-  .button .big-button {
-    padding: 17px 37px 18px; }
+  .button:hover {
+    background: #71b4c8;
+    color: white; }
 
 .button-big {
-  padding: 20px;
-  font-size: 20px; }
+  padding: 17px 42px 18px;
+  font-size: 25px; }
 
 .button-small {
-  padding: 10px;
-  font-size: 14px; }
+  padding: 7px 22px 8px;
+  font-size: 15px; }
 
 .button-alert {
-  background: red;
-  font-size: 20px; }
+  background: red; }
+
+.button-alert:hover {
+  background: #ff4d4d; }
 
 .button-success {
-  background: blue;
-  font-size: 14px; }
+  background: green; }
+
+.button-success:hover {
+  background: #00cc00; }
 
 .nav {
   list-style: none;

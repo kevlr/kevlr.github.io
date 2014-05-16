@@ -161,33 +161,71 @@ $elements-to-order: -3, 3; // order propriety for flex display
 	
 	<h4>Alignment</h4>
 	
-	<p>Change the column alignment adding <code>.bottom-align</code>, <code>.center-align</code>, <code>.baseline-align</code> or <code>.equal-height</code> class to your <code>.row</code></p>
+	<p>Change the column alignment adding <code>.bottom-align</code>, <code>.vertical-center-align</code>, <code>.baseline-align</code> or <code>.equal-height</code> class to your <code>.row</code></p>
 	
 	<h5>Exemple</h5>
 	<div class="exemple">
 		<div class="row equal-height">
 			<div class="column width4">
 				<div class="column-content">
-					<p>Sed vulputate euismod purus. Nulla eget cursus libero, quis fermentum dui. Phasellus pharetra sapien sed lorem facilisis faucibus. Nullam in risus id nulla elementum venenatis.</p>
+					<p>Sed vulputate euismod purus. Nulla eget cursus libero, quis fermentum dui.</p>
 				</div>
 			</div>
 			<div class="column width8">
 				<div class="column-content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies venenatis risus id ultricies. Nullam congue metus nec porttitor euismod. Pellentesque a lacinia purus, at porta mi. Pellentesque mi urna, bibendum sit amet malesuada sit amet, faucibus nec lectus. Suspendisse posuere non lorem vestibulum placerat. Praesent scelerisque suscipit porta. Fusce rhoncus diam sed lacus ultricies, ac suscipit mauris sagittis. Duis nec blandit augue. Sed et mi ut arcu rhoncus commodo sit amet vitae leo.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies venenatis risus id ultricies. Nullam congue metus nec porttitor euismod. Pellentesque a lacinia purus, at porta mi. Pellentesque mi urna, bibendum sit amet malesuada sit amet, faucibus nec lectus. Suspendisse posuere non lorem vestibulum placerat.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 	
 <pre class="prettyprint">
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;column width12 width6_m&quot;&gt;...&lt;/div&gt;
-  &lt;div class=&quot;column width12 width6_m&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;row equal-height&quot;&gt;
+  &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column width8&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
 	
 	<h4>Order</h4>
 	
+	<h5>Exemple</h5>
+	<div class="exemple">
+		<div class="row">
+		  <div class="column order1_m">
+			<div class="column-content">1</div>
+		  </div>
+		  <div class="column">
+			<div class="column-content">2</div>
+		  </div>
+		  <div class="column">
+			<div class="column-content">3</div>
+		  </div>
+		  <div class="column order-1_m">
+			<div class="column-content">4</div>
+		  </div>
+		</div>
+	</div>
+	
+<pre>
+&lt;div class=&quot;row no-gutter&quot;&gt;
+  &lt;div class=&quot;column order1_m&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;column order-1_m&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+	
 	<h2>Useful Mixins</h2>
+	
+	<h3>Responsive margin/padding</h3>
+	
+	<p>The following mixin is created to make responsive margin or padding based on the gutter declared in the variables.</p>
+	<p>The first parameter is padding or margin depending what you want. The second one is the direction(top, right, bottom or/and left). And the third is the ratio.</p>
+	
+	<h5>Exemple</h5>
+	
+<pre>
+@include gutter(margin, bottom top, .5);
+</pre>
 
 </div>
