@@ -1,0 +1,71 @@
+---
+layout: default
+title: Typography
+---
+<header class="page-header">
+	<div class="container">
+		<h1>Typography</h1>
+	</div>
+</header>
+
+<div class="container">
+	<div class="row double-gutter">
+		<div class="column width12">
+			<div class="article">
+				<h1>Variables</h1>
+				<p>Fill the variables in the variables.scss file to change the font-sizes, color, line height... For the font sizes, enter the value in pixels, we will transform them in rem and put a fallback in pixels for older browsers. For the line height, we recommend to use integer values.</p>
+				<h1>Headings</h1>
+				<p>In kevlr, we think headings are separated in 2 kinds: those you use for your layout (for example, the title of your website is, usually, in a h1) and those that compose the main content as articles. So in the variables.scss you have the main heading style and then the heading placed in a container we called .article.</p>
+				<h1>Useful mixins</h1>
+				<h2>rem</h2>
+				<p>We recommend to use rem for the font size. To do it easily we created a mixin to convert pixels in rem.</p>
+<div class="pre-group">
+<div class="pre-label">scss file</div>
+<pre class="prettify">
+.element {
+  @include rem(font-size, 14px);
+}
+</pre>
+<div class="pre-label">css output</div>
+<pre class="prettify">
+.element {
+  font-size: 14px
+  font-size: 0.875rem;
+}
+</pre>
+</div>
+				<h2>Responsive font</h2>
+				<p>We created a mixin to directly enter responsive font sizes, this mixin is called responsive-font-size, as a value enter a bracket with the values you want for each screen size separeted by a comma.</p>
+				<h4>Example</h4>
+<div class="pre-group">
+<div class="pre-label">scss file</div>
+<pre class="prettify">
+.element {
+  @include responsive-font-size((12px, 14px, 16px));
+}
+</pre>
+<div class="pre-label">css output</div>
+<pre class="prettify">
+.element {
+  font-size: 12px
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 600px) {
+  .element {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .element {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+</pre>
+</div>
+			</div>
+		</div>
+	</div>
+</div>
