@@ -34,7 +34,7 @@
 			width: calc(25% - 15px);
 		}
 		
-		h1 span, p span, li span {
+		h1 > span, p > span, li > span {
 			background: $darker-color;
 		}
 	}
@@ -113,7 +113,7 @@
 					margin-top: 0;
 				}
 				
-				span {
+				> span {
 					border-bottom: 7px solid $darker-color;
 				}
 			}

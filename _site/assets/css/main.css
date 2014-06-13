@@ -1232,7 +1232,7 @@ body {
           left: 50%;
           margin-left: -16px; }
       .main-nav .level1 > li .level2 {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -100%;
         width: 100%;
@@ -1476,7 +1476,7 @@ body {
     @media only screen and (min-width: 1000px) {
       .example > div {
         width: calc(25% - 15px); } }
-    .example > div h1 span, .example > div p span, .example > div li span {
+    .example > div h1 > span, .example > div p > span, .example > div li > span {
       background: #979797; }
 
 .clear-example .div1 {
@@ -1526,7 +1526,7 @@ body {
       font-size: 0.625rem; }
       .baseline-example .div1 ul li:first-child {
         margin-top: 0; }
-      .baseline-example .div1 ul li span {
+      .baseline-example .div1 ul li > span {
         border-bottom: 7px solid #979797; }
   .baseline-example .div2 {
     width: calc(75% - 5px); }
