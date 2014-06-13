@@ -223,16 +223,60 @@ $elements-to-order: -3, 3; // order propriety for flex display
 
 				<h1>Useful mixins</h1>
 
+				<h2>Media queries</h2>
+
+				<p>To add easily the media queries rules, we created a mixin. Just include the mixin "media" and as argument the nmae of the screen size you want to target.</p>
+
+				<h4>Example</h4>
+<div class="pre-group">
+<div class="pre-label">scss file</div>
+<pre>
+@include media(s){
+  // content
+}
+</pre>
+<div class="pre-label">css output</div>
+<pre>
+@media only screen and (min-width: 600px) {
+  // content
+}
+</pre>
+</div>
 				<h2>Responsive margin/padding</h2>
 
 				<p>The following mixin is created to make responsive margin or padding based on the gutter declared in the variables.</p>
 				<p>The first parameter is padding or margin depending what you want. The second one is the direction(top, right, bottom or/and left). And the third is the ratio.</p>
 
 				<h4>Example</h4>
-
+<div class="pre-group">
+<div class="pre-label">scss file</div>
 <pre>
-@include gutter(margin, bottom top, .5);
+.element {
+  @include gutter(margin, bottom top, .5);
+}
 </pre>
+<div class="pre-label">css output</div>
+<pre>
+.element {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .element {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .element {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+</pre>
+</div>
 
 			</div>
 		</div>
