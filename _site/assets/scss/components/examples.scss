@@ -325,7 +325,10 @@
 
 	.column-content {
 		background: $inverse-bg-color;
-		color: inverse-color;
+		color: $inverse-color;
 		@include gutter(padding, bottom top left right, .125);
+		p {
+			margin: 0;
+		}
 	}
 }

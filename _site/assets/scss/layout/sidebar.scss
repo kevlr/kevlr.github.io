@@ -4,15 +4,25 @@ html {
 
 .components-menu-open {
 	height: 100%;
+	@include media(s) {
+		height: auto;
+	}
 }
 
 .components-menu-open .wrapper {
 	height: 100%;
 	overflow: auto;
+	@include media(s) {
+		height: auto;
+		overflow: visible;
+	}
 }
 
 .components-menu-open .main-nav {
 	position: static;
+	@include media(s) {
+		position: fixed;
+	}
 }
 
 body {

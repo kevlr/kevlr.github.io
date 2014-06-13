@@ -711,7 +711,8 @@ body {
   font-size: 14px;
   font-size: 0.875rem;
   font-family: Muli, sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #555555; }
   @media only screen and (min-width: 600px) {
     body {
       font-size: 18px;
@@ -1177,6 +1178,9 @@ h2 {
 
 .page-header {
   width: 100%;
+  background: #31d0e0;
+  background: -webkit-linear-gradient(-45deg, #2dffc2 0%, #2c9dff 100%);
+  background: -moz-linear-gradient(-45deg, #2dffc2 0%, #2c9dff 100%);
   background: linear-gradient(135deg, #2dffc2 0%, #2c9dff 100%); }
   .page-header h1 {
     text-align: center;
@@ -1197,13 +1201,23 @@ html {
 
 .components-menu-open {
   height: 100%; }
+  @media only screen and (min-width: 600px) {
+    .components-menu-open {
+      height: auto; } }
 
 .components-menu-open .wrapper {
   height: 100%;
   overflow: auto; }
+  @media only screen and (min-width: 600px) {
+    .components-menu-open .wrapper {
+      height: auto;
+      overflow: visible; } }
 
 .components-menu-open .main-nav {
   position: static; }
+  @media only screen and (min-width: 600px) {
+    .components-menu-open .main-nav {
+      position: fixed; } }
 
 body {
   padding-bottom: 50px; }
@@ -1758,7 +1772,7 @@ body {
       margin-top: 15px; } }
 .grid-example .column-content {
   background: #31d0e0;
-  color: inverse-color;
+  color: white;
   padding-bottom: 2.5px;
   padding-top: 2.5px;
   padding-left: 2.5px;
@@ -1775,6 +1789,8 @@ body {
       padding-top: 7.5px;
       padding-left: 7.5px;
       padding-right: 7.5px; } }
+  .grid-example .column-content p {
+    margin: 0; }
 
 .pre-group {
   margin-top: 10px;

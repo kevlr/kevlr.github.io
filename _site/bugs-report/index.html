@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>{{site.name}} - {{ page.title }}</title>
+		<title>kevlr - Bugs report</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -15,7 +15,22 @@
 		
 		<div class="wrapper">
 		
-		{{ content }}
+		<header class="page-header">
+	<div class="container">
+		<h1>Bugs report</h1>
+	</div>
+</header>
+
+<div class="container">
+	<div class="row double-gutter">
+		<div class="column width12">
+			<div class="article">
+				<h1>Any trouble?</h1>
+				<p>Kevlr may comport few bugs if you have some, please report them in the <a href="https://github.com/vescoyez/framework-css/issues">Github issues</a>. You can also send some recommendations.</p>
+			</div>
+		</div>
+	</div>
+</div>
 		
 		<footer class="page-footer container">
 			<div class="row">
@@ -30,18 +45,18 @@
 		<nav class="main-nav">
 			<ul class="level1">
 				<li class="hidden visible_s hidden_m"><a class="to-expand" href="/"><span class="nav-icon expand-icon"></span>Collapse menu</a></li>
-				<li {% if page.title == "Overview" %}class="active"{% endif %}><a class="to-overview" href="/"><span class="nav-icon overview-icon"></span>Overview</a></li>
-				<li {% if page.title == "Get started" %}class="active"{% endif %}><a class="to-get-started" href="/get-started/"><span class="nav-icon get-started-icon"></span>Get started</a></li>
+				<li ><a class="to-overview" href="/"><span class="nav-icon overview-icon"></span>Overview</a></li>
+				<li ><a class="to-get-started" href="/get-started/"><span class="nav-icon get-started-icon"></span>Get started</a></li>
 				<li>
 					<a class="to-components hidden_s" href="#"><span class="nav-icon components-icon"></span>Components</a>
 					<ul class="level2">
-						<li {% if page.title == "Grid system" %}class="active"{% endif %}><a class="to-grid" href="/grid-system/"><span class="nav-icon grid-icon"></span>Grid system</a></li>
-						<li {% if page.title == "Typography" %}class="active"{% endif %}><a class="to-type" href="#"><span class="nav-icon type-icon"></span>Typography</a></li>
-						<li {% if page.title == "Navigation" %}class="active"{% endif %}><a class="to-navigation" href="#"><span class="nav-icon navigation-icon"></span>Navigation</a></li>
-						<li {% if page.title == "Buttons" %}class="active"{% endif %}><a class="to-buttons" href="#"><span class="nav-icon buttons-icon"></span>Buttons</a></li>
+						<li ><a class="to-grid" href="/grid-system/"><span class="nav-icon grid-icon"></span>Grid system</a></li>
+						<li ><a class="to-type" href="#"><span class="nav-icon type-icon"></span>Typography</a></li>
+						<li ><a class="to-navigation" href="#"><span class="nav-icon navigation-icon"></span>Navigation</a></li>
+						<li ><a class="to-buttons" href="#"><span class="nav-icon buttons-icon"></span>Buttons</a></li>
 					</ul>
 				</li>
-				<li {% if page.title == "Bugs report" %}class="active"{% endif %}><a class="to-bugs-report" href="/bugs-report/"><span class="nav-icon bugs-report-icon"></span>Bugs report</a></li>
+				<li class="active"><a class="to-bugs-report" href="/bugs-report/"><span class="nav-icon bugs-report-icon"></span>Bugs report</a></li>
 				<li class="hidden visible_s"><a href="https://github.com/vescoyez/framework-css"><span class="nav-icon github-icon"></span>Source code</a></li>
 			</ul>
 		</nav>
