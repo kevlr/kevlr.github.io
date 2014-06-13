@@ -1,20 +1,26 @@
 ---
 layout: default
-title: Grid System
+title: Grid system
 ---
+<header class="page-header">
+	<div class="container">
+		<h1>Grid system</h1>
+	</div>
+</header>
 
-<div class="article">
-	<h1>Grid System</h1>
-	
-	<h2>Flex Grid</h2>
-	<p>One of the particularity in Kevlr is the grid system. Indeed this one is built with '<a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">display:flex;</a>'. This allows you to stop worrying about clearing floats*, re-order elements*, have equal height content without javascript...</p>
-	
-	<h2>Base grid</h2>
-	
-	<h3>Variables</h3>
-	
-	<p>The first step to built your grid system is to change the variables according to your design.</p>
-	
+<div class="container">
+	<div class="row double-gutter">
+		<div class="column width12">
+			<div class="article">
+				<h1>Flex Grid</h1>
+				<p>One of the particularity in Kevlr is the grid system. Indeed this one is built with '<a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">display:flex;</a>'. This allows you to stop worrying about clearing floats*, re-order elements*, have equal height content without javascript...</p>
+
+				<h1>Base grid</h1>
+
+				<h2>Variables</h2>
+
+				<p>The first step to built your grid system is to change the variables according to your design.</p>
+
 <pre class="prettyprint">
 $columns-number: 12;		// Number of columns in your grid system.
 $column-gutter: 10px;		// Width of the gutter between the columns.
@@ -22,25 +28,25 @@ $container-max-width: none;	// The max-width of your container, "none" if fluid.
 $container-min-width: 320px;	// The min-width of your container
 $container-align: center;	// Position of your container, "center", "left" or "right"
 </pre>
-	
-	<h3>Syntax</h3>
-	<p>Add the <code>.column</code> class to your columns and wrap them in a <code>.row</code> element. Specify the width with the <code>.width#</code> class</p>
-	
-	<h5>Exemple</h5>
-	<div class="exemple">
-		<div class="row">
-			<div class="column width6"><div class="column-content">.width6</div></div>
-			<div class="column width6"><div class="column-content">.width6</div></div>
-			<div class="column width4"><div class="column-content">.width4</div></div>
-			<div class="column width4"><div class="column-content">.width4</div></div>
-			<div class="column width4"><div class="column-content">.width4</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-		</div>
-	</div>
-	
+
+				<h2>Syntax</h2>
+				<p>Add the <code>.column</code> class to your columns and wrap them in a <code>.row</code> element. Specify the width with the <code>.width#</code> class</p>
+
+				<h4>Example</h4>
+				<div class="grid-example">
+					<div class="row">
+						<div class="column width6"><div class="column-content">.width6</div></div>
+						<div class="column width6"><div class="column-content">.width6</div></div>
+						<div class="column width4"><div class="column-content">.width4</div></div>
+						<div class="column width4"><div class="column-content">.width4</div></div>
+						<div class="column width4"><div class="column-content">.width4</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+					</div>
+				</div>
+
 <pre class="prettyprint">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
@@ -54,28 +60,28 @@ $container-align: center;	// Position of your container, "center", "left" or "ri
   &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-	
-	<a href="http://codepen.io/vescoyez/pen/pKdxr" class="button">Try it on Codepen</a>
-	
-	<h4>Gutter</h4>
-	
-	<p>you can change the external gutter of a <code>.row</code> adding <code>.double-gutter</code> class to double the gutter or <code>.no-gutter</code> class to remove the gutter.</p>
-	
-	<h5>Exemple</h5>
-	<div class="exemple">
-		<div class="row double-gutter">
-			<div class="column width6"><div class="column-content">.width6</div></div>
-			<div class="column width6"><div class="column-content">.width6</div></div>
-			<div class="column width4"><div class="column-content">.width4</div></div>
-			<div class="column width4"><div class="column-content">.width4</div></div>
-			<div class="column width4"><div class="column-content">.width4</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-		</div>
-	</div>
-	
+
+				<a href="http://codepen.io/vescoyez/pen/pKdxr" class="button">Try it on Codepen</a>
+
+				<h3>Gutter</h3>
+
+				<p>you can change the external gutter of a <code>.row</code> adding <code>.double-gutter</code> class to double the gutter or <code>.no-gutter</code> class to remove the gutter.</p>
+
+				<h4>Example</h4>
+				<div class="grid-example">
+					<div class="row double-gutter">
+						<div class="column width6"><div class="column-content">.width6</div></div>
+						<div class="column width6"><div class="column-content">.width6</div></div>
+						<div class="column width4"><div class="column-content">.width4</div></div>
+						<div class="column width4"><div class="column-content">.width4</div></div>
+						<div class="column width4"><div class="column-content">.width4</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+					</div>
+				</div>
+
 <pre class="prettyprint">
 &lt;div class=&quot;row double-gutter&quot;&gt;
   &lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
@@ -89,22 +95,22 @@ $container-align: center;	// Position of your container, "center", "left" or "ri
   &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-	
-	<h5>Exemple</h5>
-	<div class="exemple">
-		<div class="row no-gutter">
-			<div class="column width6"><div class="column-content">.width6</div></div>
-			<div class="column width6"><div class="column-content">.width6</div></div>
-			<div class="column width4"><div class="column-content">.width4</div></div>
-			<div class="column width4"><div class="column-content">.width4</div></div>
-			<div class="column width4"><div class="column-content">.width4</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-			<div class="column width3"><div class="column-content">.width3</div></div>
-		</div>
-	</div>
-	
+
+				<h4>Example</h4>
+				<div class="grid-example">
+					<div class="row no-gutter">
+						<div class="column width6"><div class="column-content">.width6</div></div>
+						<div class="column width6"><div class="column-content">.width6</div></div>
+						<div class="column width4"><div class="column-content">.width4</div></div>
+						<div class="column width4"><div class="column-content">.width4</div></div>
+						<div class="column width4"><div class="column-content">.width4</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+						<div class="column width3"><div class="column-content">.width3</div></div>
+					</div>
+				</div>
+
 <pre class="prettyprint">
 &lt;div class=&quot;row no-gutter&quot;&gt;
   &lt;div class=&quot;column width6&quot;&gt;...&lt;/div&gt;
@@ -118,13 +124,13 @@ $container-align: center;	// Position of your container, "center", "left" or "ri
   &lt;div class=&quot;column width3&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-	
-	<h2>Responsiveness</h2>
-	
-	<h3>Variables</h3>
-	
-	<p>Choose the number of screen sizes you want adding/removing one value to each parameter.</p>
-	
+
+				<h1>Responsiveness</h1>
+
+				<h2>Variables</h2>
+
+				<p>Choose the number of screen sizes you want adding/removing one value to each parameter.</p>
+
 <pre class="prettyprint">
 // layouts
 $larger-layouts-name:			's',		'm',		'l';	// name of you layouts (ascending order)
@@ -137,75 +143,75 @@ $larger-layouts-container-max-width:	480px,		768px,		960px; 	// container max-wi
 $media-queries-rules: 'only screen';
 $elements-to-order: -3, 3; // order propriety for flex display
 </pre>
-	
-	<h3>Syntax</h3>
-	
-	<h4>Sizes</h4>
-	
-	<p>To change the columns width in another screen size add a <code>.width#</code> class followed by <code>_</code> and the name of your layout, for exemple <code>.width6_m</code></p>
-	
-	<h5>Exemple</h5>
-	<div class="exemple">
-		<div class="row">
-			<div class="column width12 width6_m"><div class="column-content">.width12.width6_m</div></div>
-			<div class="column width12 width6_m"><div class="column-content">.width12.width6_m</div></div>
-		</div>
-	</div>
-	
+
+				<h2>Syntax</h2>
+
+				<h3>Sizes</h3>
+
+				<p>To change the columns width in another screen size add a <code>.width#</code> class followed by <code>_</code> and the name of your layout, for Example <code>.width6_m</code></p>
+
+				<h4>Example</h4>
+				<div class="grid-example">
+					<div class="row">
+						<div class="column width12 width6_m"><div class="column-content">.width12.width6_m</div></div>
+						<div class="column width12 width6_m"><div class="column-content">.width12.width6_m</div></div>
+					</div>
+				</div>
+
 <pre class="prettyprint">
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column width12 width6_m&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;column width12 width6_m&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-	
-	<h4>Alignment</h4>
-	
-	<p>Change the column alignment adding <code>.bottom-align</code>, <code>.vertical-center-align</code>, <code>.baseline-align</code> or <code>.equal-height</code> class to your <code>.row</code></p>
-	
-	<h5>Exemple</h5>
-	<div class="exemple">
-		<div class="row equal-height">
-			<div class="column width4">
-				<div class="column-content">
-					<p>Sed vulputate euismod purus. Nulla eget cursus libero, quis fermentum dui.</p>
+
+				<h3>Alignment</h3>
+
+				<p>Change the column alignment adding <code>.bottom-align</code>, <code>.vertical-center-align</code>, <code>.baseline-align</code> or <code>.equal-height</code> class to your <code>.row</code></p>
+
+				<h4>Example</h4>
+				<div class="grid-example">
+					<div class="row equal-height">
+						<div class="column width4">
+							<div class="column-content">
+								<p>Sed vulputate euismod purus. Nulla eget cursus libero, quis fermentum dui.</p>
+							</div>
+						</div>
+						<div class="column width8">
+							<div class="column-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies venenatis risus id ultricies. Nullam congue metus nec porttitor euismod. Pellentesque a lacinia purus, at porta mi. Pellentesque mi urna, bibendum sit amet malesuada sit amet, faucibus nec lectus. Suspendisse posuere non lorem vestibulum placerat.</p>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="column width8">
-				<div class="column-content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies venenatis risus id ultricies. Nullam congue metus nec porttitor euismod. Pellentesque a lacinia purus, at porta mi. Pellentesque mi urna, bibendum sit amet malesuada sit amet, faucibus nec lectus. Suspendisse posuere non lorem vestibulum placerat.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+
 <pre class="prettyprint">
 &lt;div class=&quot;row equal-height&quot;&gt;
   &lt;div class=&quot;column width4&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;column width8&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-	
-	<h4>Order</h4>
-	
-	<h5>Exemple</h5>
-	<div class="exemple">
-		<div class="row">
-		  <div class="column order1_m">
-			<div class="column-content">1</div>
-		  </div>
-		  <div class="column">
-			<div class="column-content">2</div>
-		  </div>
-		  <div class="column">
-			<div class="column-content">3</div>
-		  </div>
-		  <div class="column order-1_m">
-			<div class="column-content">4</div>
-		  </div>
-		</div>
-	</div>
-	
+
+				<h3>Order</h3>
+
+				<h4>Example</h4>
+				<div class="grid-example">
+					<div class="row">
+					  <div class="column order1_m">
+						<div class="column-content">1</div>
+					  </div>
+					  <div class="column">
+						<div class="column-content">2</div>
+					  </div>
+					  <div class="column">
+						<div class="column-content">3</div>
+					  </div>
+					  <div class="column order-1_m">
+						<div class="column-content">4</div>
+					  </div>
+					</div>
+				</div>
+
 <pre>
 &lt;div class=&quot;row no-gutter&quot;&gt;
   &lt;div class=&quot;column order1_m&quot;&gt;...&lt;/div&gt;
@@ -214,18 +220,21 @@ $elements-to-order: -3, 3; // order propriety for flex display
   &lt;div class=&quot;column order-1_m&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-	
-	<h2>Useful Mixins</h2>
-	
-	<h3>Responsive margin/padding</h3>
-	
-	<p>The following mixin is created to make responsive margin or padding based on the gutter declared in the variables.</p>
-	<p>The first parameter is padding or margin depending what you want. The second one is the direction(top, right, bottom or/and left). And the third is the ratio.</p>
-	
-	<h5>Exemple</h5>
-	
+
+				<h1>Useful Mixins</h1>
+
+				<h2>Responsive margin/padding</h2>
+
+				<p>The following mixin is created to make responsive margin or padding based on the gutter declared in the variables.</p>
+				<p>The first parameter is padding or margin depending what you want. The second one is the direction(top, right, bottom or/and left). And the third is the ratio.</p>
+
+				<h4>Example</h4>
+
 <pre>
 @include gutter(margin, bottom top, .5);
 </pre>
 
+			</div>
+		</div>
+	</div>
 </div>

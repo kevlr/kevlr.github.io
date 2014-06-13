@@ -1,29 +1,134 @@
 ---
 layout: default
-title: Home
+title: Overview
 ---
+<header class="page-header">
+	<div class="container">
+		<h1>kevlr</h1>
+	</div>
+</header>
 
-<div class="article">
-  <h1>Getting started</h1>
-  <p>Kevlr is a responsive front-end framework based on <a href="http://sass-lang.com">Sass</a>. This framework is not made to built prototypes looking all the same but it's made to built real websites with their own visual identity.</p>
-  <a href="https://github.com/vescoyez/framework-css" class="button">Get the code on Github</a>
-  
-  <h2>Beta</h2>
-  <p>For now Kevlr is still in Beta, all the features aren't here yet and maybe you'll encounter some bug. If that happends please <a href="https://github.com/vescoyez/framework-css/issues">let us know</a>.</p>
-  
-  <h2>Sass</h2>
-  <p>This framework uses Sass, if you don't know how to use it, please visit <a href="http://sass-lang.com">their website</a>. You don't need to understand everything but if you get how works the variables and mixins, it will be easier.</p>
-  
-  <h2>Variables</h2>
-  <p>The most important file in Kevlr is the '<a href="https://github.com/vescoyez/framework-css/blob/master/scss/variables.scss">variables.scss</a>' file. That's where you can change every styling rules like how many columns you want in your grid system, the width between the columns, the font sizes...</p>
-  
-  <h2>Mobile first</h2>
-  <p>In Kevlr we built everything for mobile first and then other screen sizes because we think mobile is the most complex part of the design.</p>
-  
-  <h2>Browser support</h2>
-  <p>Kevlr is compatible with all modern browsers : Chrome 21+, Firefox 28+, Safari 6.1+, IE10+, Opera 12.1+. But we still have fallback for all older browsers except IE7 and lower.</p>
-  
-  <h2>Interested?</h2>
-  <p>Read the <a href="/grid-system/">documentation</a> to learn how to use it and <a href="https://github.com/vescoyez/framework-css">download it on Github.</a></p>
-  
+<div class="container">
+	<div class="row double-gutter">
+		<div class="column">
+			<h2>Truely responsive Sass modules to build any website</h2>
+			<hr class="page-divider">
+			<div class="article">
+				<h1>Flexible grid system</h1>
+				<p>The grid system is based on <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">display flex</a>. That brings those advantages :</p>
+				<h2>No more "clear"</h2>
+				<p>By default blocks look like that :</p>
+				<div class="example clear-example">
+					<div class="div1"></div>
+					<div class="div2"></div>
+					<div class="div3"></div>
+					<div class="div4"></div>
+					<div class="div5"></div>
+					<div class="div6"></div>
+					<div class="div7"></div>
+					<div class="div8"></div>
+				</div>
+				<h2>Vertical align elements</h2>
+				<p>baseline</p>
+				<div class="example baseline-example">
+					<div class="div1">
+						<ul>
+							<li><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+							<li><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+							<li><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+							<li><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+							<li><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></li>
+							<li><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+						</ul>
+					</div>
+					<div class="div2">
+						<h1><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></h1>
+						<p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+						<p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+					</div>
+				</div>
+				<p>center</p>
+				<div class="example center-example">
+					<div class="div1"></div>
+					<div class="div2"></div>
+					<div class="div3"></div>
+					<div class="div4"></div>
+				</div>
+				<p>or bottom</p>
+				<div class="example bottom-example">
+					<div class="div1"></div>
+					<div class="div2"></div>
+					<div class="div3"></div>
+					<div class="div4"></div>
+				</div>
+				<h2>Equal height elements</h2>
+				<div class="example equal-height-example">
+					<div class="div1"><p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p></div>
+					<div class="div2"><p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p></div>
+					<div class="div3"><p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p></div>
+					<div class="div4"><p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p></div>
+				</div>
+				<h2>Reorder elements according to the screen size</h2>
+				<div class="reorder-example flex bottom-align">
+					<div class="smartphone">
+						<div class="screen">
+							<div class="div1">1</div>
+							<div class="div1">2</div>
+							<div class="div1">3</div>
+							<div class="div1">4</div>
+						</div>
+					</div>
+					<div class="laptop">
+						<div class="screen">
+							<div class="div1 order1">1</div>
+							<div class="div1">2</div>
+							<div class="div1">3</div>
+							<div class="div1">4</div>
+						</div>
+					</div>
+				</div>
+				<hr class="page-divider">
+				<h1>Responsive font size</h1>
+<div class="pre-group">
+<div class="pre-label">variables.scss</div>
+<pre class="prettyprint">
+// layouts:	  main       s          m
+$body-font-size:  18px,      20px,      22px;
+$h1-size:         48px 1.2,  52px 1.1,  58px 1;
+</pre>
+<div class="pre-label">css output</div>
+<pre class="prettyprint">
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 58px;
+    line-height: 1;
+  }
+}
+</pre>
+</div>
+			</div>
+		</div>
+	</div>
 </div>

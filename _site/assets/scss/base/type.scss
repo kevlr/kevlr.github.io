@@ -1,0 +1,24 @@
+h2 {
+	text-align: center;
+	@include gutter(margin, top bottom, 1.5)
+}
+
+.page-divider {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), $light-color, rgba(255,255,255,0)); 
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0), $light-color, rgba(255,255,255,0)); 
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0), $light-color, rgba(255,255,255,0)); 
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0), $light-color, rgba(255,255,255,0));
+	clear: both;
+	@include gutter(margin, top bottom, .5);
+}
+
+.article {
+	@include gutter(margin, top);
+	@include gutter(margin, bottom, .5);
+	
+	h2 {
+		text-align: left;
+	}
+}

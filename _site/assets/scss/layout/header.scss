@@ -1,0 +1,9 @@
+.page-header {
+	width: 100%;
+	background: linear-gradient(135deg, #2dffc2 0%,#2c9dff 100%);
+	h1 {
+		text-align: center;
+		color: $inverse-color;
+		@include gutter(padding,top bottom, 2)
+	}
+}
