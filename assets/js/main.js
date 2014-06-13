@@ -6,7 +6,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$(this).closest('ul').find('li').removeClass('active');
 		$(this).closest('li').addClass('active');
-		$(this).next('ul').addClass('open');
+		$('body').addClass('components-menu-open');
 	});
 	
 	$('.to-expand').on('click', function(e){
