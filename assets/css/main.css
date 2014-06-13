@@ -1192,17 +1192,12 @@ h2 {
         padding-top: 120px;
         padding-bottom: 120px; } }
 
-html, body {
-  height: 100%; }
-
 body {
   padding-bottom: 50px; }
 
-.wrapper {
-  height: 100%;
-  overflow: auto; }
-
 .main-nav {
+  position: fixed;
+  bottom: 0;
   height: 50px;
   overflow: hidden;
   width: 100%;
@@ -1270,7 +1265,6 @@ body {
   body {
     padding-bottom: 0;
     padding-right: 52px;
-    overflow: hidden;
     transition: .2s all ease-out; }
 
   .menu-expanded {
@@ -1283,7 +1277,6 @@ body {
     height: auto;
     overflow: auto;
     width: 280px;
-    position: absolute;
     right: -228px;
     top: 0;
     bottom: 0; }
